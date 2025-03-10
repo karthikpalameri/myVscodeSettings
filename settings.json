@@ -31,7 +31,8 @@
   "vim.leader": "<space>",
   "vim.handleKeys": {
     "<C-a>": false,
-    "<C-f>": false
+    "<C-f>": false,
+    "<C-n>": false
   },
   "extensions.experimental.affinity": {
     "vscodevim.vim": 1
@@ -48,4 +49,7 @@
   "editor.cursorSmoothCaretAnimation": "on",
   "terminal.integrated.smoothScrolling": true,
   "editor.smoothScrolling": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
