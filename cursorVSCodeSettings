@@ -1,0 +1,85 @@
+{
+    "window.commandCenter": 1,
+    "redhat.telemetry.enabled": false,
+    // "java.home": "C:\\workspace_\\jbr\\jbr_jcef-21.0.6-windows-x64-b631.39\\jbr_jcef-21.0.6-windows-x64-b631.39",
+    "java.jdt.ls.java.home": "C:\\workspace_\\jbr\\jbr_jcef-21.0.6-windows-x64-b631.39\\jbr_jcef-21.0.6-windows-x64-b631.39",
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-21",
+            "path": "C:\\workspace_\\jbr\\jbr_jcef-21.0.6-windows-x64-b631.39\\jbr_jcef-21.0.6-windows-x64-b631.39",
+            "default": true
+        }
+    ],
+    "java.project.importOnFirstTimeStartup": "interactive",
+    "java.autobuild.enabled": false,
+    "java.sharedIndexes.enabled": "on",
+    "java.maxConcurrentBuilds": 4,
+    "files.autoSave": "afterDelay",
+    "editor.cursorBlinking": "phase",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "terminal.integrated.smoothScrolling": false,
+    "editor.smoothScrolling": false,
+    // vim related settings
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<Esc>"
+            ]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": [
+                "<leader>",
+                "d"
+            ],
+            "after": [
+                "d",
+                "d"
+            ]
+        },
+        {
+            "before": [
+                "<C-n>"
+            ],
+            "commands": [
+                ":nohl"
+            ]
+        },
+        {
+            "before": [
+                "K"
+            ],
+            "commands": [
+                "lineBreakInsert"
+            ],
+            "silent": true
+        }
+    ],
+    "vim.leader": "<space>",
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false,
+        "<C-n>": false
+    },
+    "extensions.experimental.affinity": {
+        "vscodevim.vim": 1
+    },
+    "cursor-retrieval.canAttemptGithubLogin": false,
+    "terminal.integrated.profiles.windows": {
+         "PowerShell 7": {
+            "path": "C:\\Program Files\\PowerShell\\7\\pwsh.exe"
+  }
+},
+"java.server.launchMode": "LightWeight",
+"security.promptForLocalFileProtocolHandling": false
+}
