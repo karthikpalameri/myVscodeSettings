@@ -1,77 +1,43 @@
 {
-  "mcpServers": {
-    "github.com/modelcontextprotocol/servers/tree/main/src/sequentialthinking": {
-      "autoApprove": [
-        "sequential_thinking",
-        "sequentialthinking"
-      ],
-      "disabled": true,
-      "timeout": 60,
-      "command": "cmd",
-      "args": [
-        "/c",
-        "npx",
-        "-y",
-        "@modelcontextprotocol/server-sequential-thinking"
-      ],
-      "transportType": "stdio"
-    },
-    "github.com/zcaceres/fetch-mcp": {
-      "autoApprove": [
-        "fetch_html",
-        "fetch_markdown",
-        "fetch_txt",
-        "fetch_json"
-      ],
-      "disabled": false,
-      "timeout": 60,
-      "command": "node",
-      "args": [
-        "C:/Users/karth/Documents/Cline/MCP/fetch-mcp/dist/index.js"
-      ],
-      "transportType": "stdio"
-    },
-    "github.com/upstash/context7-mcp": {
-      "autoApprove": [
-        "get-library-docs",
-        "resolve-library-id"
-      ],
-      "disabled": false,
-      "timeout": 60,
-      "command": "cmd",
-      "args": [
-        "/c",
-        "npx",
-        "-y",
-        "@upstash/context7-mcp@latest"
-      ],
-      "transportType": "stdio"
-    },
-    "github.com/modelcontextprotocol/servers/tree/main/src/filesystem": {
-      "autoApprove": [
-        "read_file",
-        "read_multiple_files",
-        "write_file",
-        "edit_file",
-        "create_directory",
-        "list_directory",
-        "directory_tree",
-        "move_file",
-        "search_files",
-        "get_file_info",
-        "list_allowed_directories"
-      ],
-      "disabled": false,
-      "timeout": 60,
-      "command": "cmd",
-      "args": [
-        "/c",
-        "npx",
-        "-y",
-        "@modelcontextprotocol/server-filesystem",
-        "c:/Users/karth/proj2"
-      ],
-      "transportType": "stdio"
+    "mcpServers": {
+        "browser-tools": {
+            "command": "cmd.exe",
+            "args": [
+                "/c",
+                "npx -y @agentdeskai/browser-tools-mcp@1.2.0"
+            ]
+        },
+        "sequential-thinking": {
+            "command": "cmd.exe",
+            "args": [
+                "/c",
+                "npx -y @modelcontextprotocol/server-sequential-thinking"
+            ]
+        },
+        "memory": {
+            "command": "cmd.exe",
+            "args": [
+                "/c",
+                "npx -y @modelcontextprotocol/server-memory"
+            ],
+            "env": {
+                "MEMORY_FILE_PATH": "C:/Users/karth/Downloads/memory.json"
+            }
+        },
+        "postgres": {
+            "command": "cmd.exe",
+            "args": [
+                "/c",
+                "npx -y @modelcontextprotocol/server-postgres",
+                "postgresql://postgres:postgres@localhost:5432/postgres"
+            ]
+        },
+        "context7": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@upstash/context7-mcp@latest"
+            ]
+        }
     }
-  }
 }
