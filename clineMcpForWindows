@@ -5,7 +5,7 @@
         "sequential_thinking",
         "sequentialthinking"
       ],
-      "disabled": true,
+      "disabled": false,
       "timeout": 60,
       "command": "cmd",
       "args": [
@@ -72,6 +72,49 @@
         "c:/Users/karth/proj2"
       ],
       "transportType": "stdio"
+    },
+    "github.com/NightTrek/Software-planning-mcp": {
+      "disabled": false,
+      "command": "node",
+      "args": [
+        "C:/Users/karth/Documents/Cline/MCP/software-planning-tool/build/index.js"
+      ],
+      "transportType": "stdio",
+      "autoApprove": [
+        "start_planning",
+        "save_plan",
+        "add_todo",
+        "remove_todo",
+        "get_todos",
+        "update_todo_status"
+      ]
+    },
+    "github.com/modelcontextprotocol/servers/tree/main/src/github": {
+      "disabled": false,
+      "command": "cmd",
+      "args": [
+        "/c",
+        "npx",
+        "-y",
+        "@modelcontextprotocol/server-github"
+      ],
+      "transportType": "stdio",
+      "autoApprove": [
+        "search_repositories",
+        "get_file_contents",
+        "list_commits",
+        "search_code",
+        "search_issues",
+        "search_users",
+        "get_issue",
+        "list_pull_requests",
+        "get_pull_request",
+        "get_pull_request_reviews",
+        "get_pull_request_comments",
+        "update_pull_request_branch",
+        "get_pull_request_status",
+        "get_pull_request_files"
+      ]
     }
   }
 }
