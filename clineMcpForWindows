@@ -115,6 +115,19 @@
         "get_pull_request_status",
         "get_pull_request_files"
       ]
+    },
+    "github.com/pashpashpash/mcp-webresearch": {
+      "disabled": false,
+      "command": "node",
+      "args": [
+        "c:/Users/karth/proj2/mcp-webresearch/dist/index.js"
+      ],
+      "transportType": "stdio",
+      "autoApprove": [
+        "take_screenshot",
+        "search_google",
+        "visit_page"
+      ]
     }
   }
 }
