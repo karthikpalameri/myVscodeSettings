@@ -128,6 +128,35 @@
         "search_google",
         "visit_page"
       ]
+    },
+    "github.com/modelcontextprotocol/servers/tree/main/src/memory": {
+      "disabled": false,
+      "autoApprove": [
+        "create_entities"
+      ],
+      "command": "cmd",
+      "args": [
+        "/c",
+        "npx",
+        "-y",
+        "@modelcontextprotocol/server-memory"
+      ],
+      "transportType": "stdio"
+    },
+    "github.com/modelcontextprotocol/servers/tree/main/src/postgres": {
+      "disabled": false,
+      "autoApprove": [
+        "query"
+      ],
+      "command": "cmd",
+      "args": [
+        "/c",
+        "npx",
+        "-y",
+        "@modelcontextprotocol/server-postgres",
+        "postgresql://postgres:postgres@localhost:5432/postgres"
+      ],
+      "transportType": "stdio"
     }
   }
 }
